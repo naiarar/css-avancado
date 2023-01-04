@@ -6,17 +6,18 @@ body {
 }
 
 h1 {
-    .cores();
+    .cores(50px);
     text-shadow: 2px 1px 1px #7a7b7c;
     font-size: 50px;
 }
 
 p {
-    .cores();
-    font-size: 23px;
+    .cores(23px);
+
 }
 
-.cores() {
+.cores(@tamanho) {
     color: @cor;
     background-color: @cor*0.2;
+    font-size: @tamanho;
 }
